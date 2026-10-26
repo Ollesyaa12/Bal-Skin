@@ -1,0 +1,367 @@
+@media (max-width: 900px) {
+  
+    .zapis-icon {
+    display: none;
+  }
+
+.nav {
+    display: none;
+}
+
+.burger {
+    display: block;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: #574F42;
+    cursor: pointer;
+    z-index: 10000;
+    order: 1;
+  }
+
+  .mobile-nav a {
+  text-decoration: none;
+  color: #574F42;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #f8f8f8;
+    z-index: 99999;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+  }
+
+  .mobile-menu.active {
+    left: 0;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo-link {
+    order: 2;
+  }
+
+  .logo-img {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: auto;
+  }
+
+.header {
+    position: fixed;
+    background: #f8f8f8;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    width: 100%;
+    
+    box-sizing: border-box !important; /* Чтобы отступы не расширяли шапку */
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px 20px !important; /* Безопасные отступы по бокам */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+  .main-block {
+    padding: 30px 10px 0 10px;
+    background: none !important;
+    box-shadow: none;
+  }
+  
+  body {
+    padding: 86px 10px 10px 10px;
+    background: linear-gradient(180deg, #F6F3F3 0%, #DACEBA 100%);
+  }
+
+                                            /*BANNER*/
+  .banner {
+    padding: 0;
+  }
+
+  .banner-bg {
+    border-radius: none;
+    border: none;
+    height: 330px;
+    
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  .banner-img-menu {
+    display: inline-block; /* ← Картинка как текст (центрируется) */
+    max-width: 100%;
+    
+    border-radius: 10px;
+    
+    
+  }
+
+  .banner-img-menu-wrap {
+    text-align: center; /* ← Центрирует всё внутри */
+    width: 100%;        /* ← На всю ширину */
+    margin-top: 20px;
+  }
+
+  .banner-text {
+    text-align: left;
+    
+  }
+.obo-mne {
+    display: none;
+}
+.banner-name {
+    display: none;
+}
+
+  .banner-content {
+    padding-left: 0;
+    text-align: left;
+    align-items: left;
+    justify-content: flex-start;
+  }
+  
+  .banner-title {
+    font-size: 50px;
+    margin: 0;
+    line-height: 0.9;
+  }
+  
+  .banner-subtitle {
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    padding-top: 10px;
+    
+  }
+  
+  .banner-3 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    border-radius: 20px;
+  }
+
+                                              /*SERVICES*/
+  .services {
+  padding: 30px 0;
+}
+
+.services-wrap {
+    padding: 30px 10px 0 10px;
+}
+
+.services h2{
+    margin: 0;
+    font-size: 40px;
+}
+
+.services-link {
+    display: none;
+}
+
+.services-grid {
+    gap: 10px;
+    margin-top: 90px;
+}
+
+.service-card h3 {
+    font-size: 16px;
+}
+
+.service-card {
+    height: 240px;
+    border-radius: 15px;
+    background: #f8f8f8;
+}
+
+.card-name {
+    margin: 10px;
+    border: none;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+    margin: 10px;      
+}
+
+.service-knopka {
+    margin: 30px 0 30px 0;
+}
+
+.zapis-s {
+    font-size: 24px;
+    padding: 20px 40px;
+}
+
+                                                  /*BONUS*/
+.bonus-wrap {
+    margin: 0;
+    padding: 30px 10px 0 10px;
+}
+
+.bonus-container {
+    grid-template-columns: 1fr;    /* В столбик */
+    padding: 30px;
+    gap: 30px;
+  }
+  .bonus-text h2 {
+    font-size: 26px;
+  }
+
+.bonus-title h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.bonus-container {
+    padding: 90px 0 30px 0;
+}
+
+                                          /*SALE*/
+    .sale {
+        margin: 30px 0;
+    }
+
+    .sale-wrap {
+        padding: 30px 10px 30px 10px;
+    }
+
+    .sale-head h2{
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .sale-grid { 
+        grid-template-columns: 1fr;
+        padding: 90px 0 0 0;
+     }
+
+    .sale-card {
+        margin: 0;
+    }
+
+    .sale-card-top h3 {
+        font-size: 24px;
+    }
+
+    .sale-card-body p{
+        font-size: 16px;
+    }
+
+    .sale-card-img {
+        height: 200px;
+    }
+
+                                                 /*OBO-MNE*/
+    .about {
+        margin: 0;
+    }
+
+    .about-wrap {
+        max-width: 100%;
+        padding: 0 10px;
+        flex-direction: column
+    }
+    .about-left {
+  width: 100%;
+  order: 1;
+}
+
+    
+  .about-photo {
+    display: none;
+  }
+
+  .about-photo-768 {
+    display: block;
+    padding: 0 0 30px 0;
+  }
+  
+  .about-approach {
+    padding: 30px 25px;
+  }
+  .about-list {
+    column-count: 1;                 /* На телефоне — 1 колонка */
+  }
+
+  .about-name {
+    font-size: 40px !important;
+  }
+
+  .about-line {
+    width: 250px;
+  }
+
+  .about-photo-768 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;                 /* Заполняет блок, не искажая */
+  display: block;
+}
+.about-approach-wrap {
+    padding: 0;
+    margin: 30px 10px 0 10px;
+}
+     
+                                                      /*OTZIVI*/
+.reviews {
+    margin: 30px 0;
+}
+
+.reviews-wrap {
+    padding: 0 10px;
+}
+
+.reviews-title {
+    margin: 0 0 70px 0;
+    font-size: 40px;
+}
+
+.reviews-carousel {
+    padding: 0;
+}
+
+.reviews-header {
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.reviews-scroll {
+    padding: 0 10px 0 0;
+}
+
+.review-card {
+    flex: 0 0 310px;
+}
+
+
+}
+
+
+
+
+
+
+.footer {
+
+}
