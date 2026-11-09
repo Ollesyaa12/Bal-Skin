@@ -1,0 +1,222 @@
+.works-1 {
+    padding: 30px 0 40px 0;
+    background: #f8f8f8;
+    border: 1px solid #A5A293;
+    margin: 0 5px 5px 5px;
+    border-radius: 30px;
+}
+
+.works-wrap-1 {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.works-title-1 {
+    margin: 0 0 40px 50px;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: #9F927A
+}
+
+/* =========================================
+   2. КАРУСЕЛИ (ОБЩИЕ СТИЛИ)
+   ========================================= */
+.works-carousel-1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.works-scroll-1 {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    
+    /* Скрываем скроллбар */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.works-scroll::-webkit-scrollbar {
+    display: none; 
+}
+
+.work-card-1 {
+    flex: 0 0 auto; /* Запрещаем карточкам сжиматься */
+    width: 350px;   /* Ширина карточки */
+    height: 350px;  /* Высота карточки */
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #A5A293;
+    background: #eee;
+}
+
+.work-card-1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.work-card-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполняем карточку без искажений */
+    display: block;
+    transition: transform 0.3s;
+}
+
+.work-card-1:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   3. СТРЕЛКИ
+   ========================================= */
+.works-arrow-left-1 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #E09A9B;
+    color: #E09A9B;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+    z-index: 10;
+    order: 1;
+}
+
+.works-scroll-1 {
+    order: 2;
+}
+
+.works-arrow-right-1 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #E09A9B;
+    color: #E09A9B;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+    z-index: 10;
+    order: 3;
+}
+
+
+/* =========================================
+   4. ФИЛЬТРЫ (ВЫПАДАЮЩИЙ СПИСОК)
+   ========================================= */
+.works-filter-select {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid #E09A9B;
+    color: #E09A9B;
+    padding: 10px 40px 10px 20px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    
+    /* Рисуем свою стрелочку */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E09A9B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+/* =========================================
+   5. ЛАЙТБОКС (МОДАЛЬНОЕ ОКНО)
+   ========================================= */
+.lightbox-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.lightbox-modal.active {
+    display: flex;
+}
+
+.lightbox-img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 10px;
+    cursor: zoom-out;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10001;
+    line-height: 1;
+}
+
+/* =========================================
+   6. МОБИЛЬНАЯ ВЕРСИЯ
+   ========================================= */
+@media (max-width: 900px) {
+    .work-card-1 {
+        width: 330px;  /* Карточки поменьше на телефоне */
+        height: 330px;
+    }
+
+    .works-1 {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    .works-arrow-left-1 {
+        display: none;
+    }
+
+    .works-arrow-right-1 {
+        display: none;
+    }
+
+    .works-wrap-1 {
+        padding: 0 10px;
+    }
+
+    .works-title-1 {
+        font-size: 35px;
+        text-align: center;
+        margin: 0 0 60px 0;
+    }
+}
